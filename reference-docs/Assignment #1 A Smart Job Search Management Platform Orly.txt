@@ -1,0 +1,129 @@
+Assignment #1: Users, Customers, Segments &amp; Personas
+April 25th, 2026
+Product name:
+Student full name: Meital Grundman
+Student full name: Luba Farberov 
+Student full name: Helen Shuster
+Student full name: Yaron Hillman
+Product description:
+Joobi is the ultimate AI-Powered Career Copilot designed to turn the chaotic, fragmented, and often soul-crushing process of job hunting into a structured, high-conversion project.
+In a world where &quot;applying&quot; often feels like shouting into a black hole, Joobi gives candidates an unfair advantage. It doesn't just track your applications; it engineers your success. By integrating deep-tech tools like real-time ATS (Applicant Tracking System) Optimization, hyper-personalized Interview Prep Briefs, and a Strategic Networking Engine, we solve the core problem of &quot;Lost Control.&quot; We empower professionals to stop being passive applicants and start being high-value candidates who command the hiring process. Joobi : Take back control of your future.
+Users &amp; Customers
+What is your product’s type of business - B2B, B2C or B2B2C?
+Both B2B and B2C We operate a B2C model by offering &quot;Pro&quot; subscriptions directly to individual job seekers. Simultaneously, we operate a B2B model by selling bulk licenses directly to organizations like Career Centers and Recruitment Agencies. It is not a B2B2C model (like a marketplace) because these organizations do not use our platform to sell their own services to the end-users.
+List your product’s different type of users.
+End-Users:
+Active job seekers using the free version.
+Students that got to use the app from the Career Centers and Bootcamps.
+Customers:
+B2C Customers: The job seeker subscribing to &quot;Pro&quot; features.
+B2B Customers: Career Centers and Bootcamps purchasing bulk licenses for their graduates.
+Recruitment &amp; Staffing Agencies (B2B): Used as an internal workflow tool to prepare candidates, directly increasing successful placement rates and agency revenue. 
+Indirect Users:
+Family and friends that are using the app to help.
+Internal Users:
+AI Training Specialist: Manages and refines the AI logic for resume matching and interview simulations to ensure high accuracy .
+B2B Account Manager: Uses internal dashboards to monitor success rates for college partners and manage institutional renewals .
+Product Analyst: Conducts funnel analysis and monitors KPIs (Key Performance Indicators) to drive strategic product decisions.
+Customer Support Representative: Operates backend tools to provide real-time assistance to stressed job seekers, ensuring they never miss a deadline due to technical issues .
+Among your users - who might become your customers? 
+Free version Job Seekers (B2C Customer)- These are your Direct End-Users who choose to pay for a &quot;Pro version&quot;.
+Segmentation
+Segment your users, applying the principles we’ve learned in class. Up to 5 different groups of segments.
+Structure your segmentation answer based on the examples given in class - User type, Segmentation group, segments. 
+Mark down the specific segments you’d like to focus on as your MVP.
+We have segmented our users based on groups that have different needs and behaviors within the platform.
+User Type
+Segmentation Group
+Segments
+1. Job Seekers (End-Users)
+Career Stage
+Fresh Graduates, Juniors, Senior, Executives.
+2. Job Seekers (End-Users)
+Motivation &amp; Urgency
+Active Seekers (Unemployed), Passive Seekers (Employed), Career Switchers (Pivoters).
+3. Job Seekers (End-Users)
+Industry
+High-Tech &amp; Software, Liberal Professions (Law/Finance), Traditional Industries, etc..
+4. Job Seekers (End-Users)
+Work arrangement.
+Hybrid, remote,on site.
+5. Job Seekers (End-Users)
+Employment Model 
+Full time job, Part-time, Mothers.
+Our MVP Focus Segment:
+Our MVP Focus Segment: We chose to focus specifically on Senior Job Seekers in the High-Tech &amp; Software Industry who are Active Seekers (Unemployed) as our MVP segment. Reasoning: Their pain of &quot;Lost Control&quot; in a saturated market is highly complex due to multi-stage technical interviews, and as experienced professionals, they have the highest willingness to pay for a premium AI copilot that solves their specific pain points.
+User Persona
+Create 2 different personas (not more) based on the users you identified for your product and the different segments you’ve defined.
+One of your personas will represent your MVP’s persona.
+Follow the structure you’ve learned in class - Olivia. Focus on the following aspects: about, personal details, what are the segments this persona is associated with, needs, and frustrations.
+Persona 1 - MVP Focus
+About + personal details:
+Name: David (42)
+Role: Engineering Manager / Software Architect
+Location: Be'er Ya'akov 
+Status: Married + 3 kids. Recently laid off from a Tier-1 startup.
+Story: David has 15 years of experience and is used to being the one hiring people. Suddenly, he is on the other side of the desk. He is treating his job search like a full-time job, but between school runs and household responsibilities, he is losing track of his 20+ active processes. He feels insulted by automated rejection emails and is overwhelmed by the high-stakes nature of senior-level interviews.
+User segments:
+Career Stage: Senior
+Industry: High-Tech &amp; Software
+Motivation: Active Seeker (Unemployed)
+Work Arrangement: Hybrid/Remote
+Employment Model: Full time
+Needs: 
+Command Center: He needs to &quot;hire&quot; a tool to centralize 10+ multi-stage recruitment processes so he can stop using 20 open browser tabs and messy notes.
+ATS Mastery: He needs to ensure his complex technical background is correctly &quot;read&quot; by company bots so he doesn't get auto-rejected before a human sees his CV.
+Executive Briefing: He needs deep, role-specific insights before high-level &quot;System Design&quot; or &quot;Culture Fit&quot; interviews to stay ahead of younger candidates.
+Pains/frustrations:
+Loss of Control: He feels anxious because his &quot;system&quot; of spreadsheets isn't scaling (Why? Because his search is too complex. Why? Because he is managing different CV versions for different tech stacks).
+Identity Erosion: He feels like a &quot;data point&quot; instead of a leader (Why? Because he only gets bot responses. Why? Because he hasn't optimized his outreach to real people).
+Time Poverty: He is wasting 2 hours a day on manual tracking instead of networking or spending time with his kids.
+ 
+Persona 2
+About + personal details:
+Name: Maya (25)
+Role: Recently Licensed Accountant (CPA)
+Location: Ramat Gan
+Status: Single. Just finished her internship at a small firm.
+Story: Maya is bright and ambitious, but she is entering a very &quot;traditional&quot; and &quot;old-school&quot; industry. She wants to land a role at one of the &quot;Big 4&quot; accounting firms. She feels like a small fish in a giant pond and doesn't know how to make her internship experience stand out. She is sending her CV everywhere and feels like she’s getting nowhere.
+User segments:
+Career Stage: Junior / Fresh Graduate
+Industry: Accounting
+Motivation: Active Seeker
+Work Arrangement: Remote, On-site, hybrid
+Employment Model: Full time
+Needs: 
+A Professional &quot;Look&quot;: She needs a tool that ensures her CV matches the specific, formal language of top-tier accounting firms.
+Interview Confidence: She needs a &quot;Cheat Sheet&quot; for technical accounting questions so she doesn't freeze up during her first big corporate interview.
+Tracking the &quot;Hunt&quot;: She needs to remember which partner she spoke to at which firm so she doesn't look unprofessional by repeating herself.
+Pains/frustrations:
+The &quot;Junior Paradox&quot;: She is frustrated because every &quot;Entry Level&quot; job requires 3 years of experience.
+Information Blindness: She doesn't know which of her applications are actually being looked at (Why? Because she has no feedback loop. Why? Because traditional firms don't send updates).
+Fear of Failure: She feels like she is falling behind her friends who already landed roles (Why? Because she isn't targeting the right firms. Why? Because she is focused on quantity over quality).
+Assignment Feedback: Joobi
+Overall Assessment
+This is an outstanding assignment that demonstrates strong analytical thinking and thorough understanding of user segmentation and persona development. The suggestions above are refinements to an already excellent submission. The team has clearly invested significant effort in understanding their target market and creating actionable user insights. Well done!
+Strengths
+Exceptional quality: This is a comprehensive and well-structured assignment
+Complete deliverables: All required elements are present and thoroughly developed
+Clear business model: B2B and B2C models are clearly identified with detailed explanations
+Strong segmentation: Five segmentation groups with clear MVP focus and strong reasoning
+Comprehensive personas: Two distinct, detailed personas with all required components
+Professional presentation: Well-organized structure demonstrating strong understanding of market segmentation and user-centric design
+Improvement Comments
+The assignment is of high quality. The following are minor suggestions for refinement rather than addressing significant omissions:
+1. User Types - Indirect Users Clarification
+Issue: The description &quot;Family and friends that are using the app to help&quot; is a bit vague.
+Recommendation: Consider clarifying how they use the app to help. Do they have limited access? Do they view progress reports? Do they provide feedback? Understanding their specific interaction would make this category more concrete and actionable.
+2. Segmentation - Employment Model Category
+Issue: The segment &quot;Mothers&quot; under &quot;Employment Model&quot; feels slightly out of place. While &quot;Mothers&quot; can be a crucial demographic with specific needs, it's not an &quot;employment model&quot; in the same vein as &quot;Full-time job&quot; or &quot;Part-time.&quot;
+Recommendation: Consider one of these approaches:
+Create a separate &quot;Demographics&quot; or &quot;Life Stage&quot; segmentation group
+Refine to describe the type of employment model mothers often seek (e.g., &quot;Seeking flexible/part-time roles&quot;)
+Move to a different segmentation category that better captures this demographic dimension
+3. Persona 2 - Work Arrangement Specificity
+Issue: For Maya, listing &quot;Remote, On-site, hybrid&quot; for Work Arrangement is very broad and covers all possibilities.
+Recommendation: It would be more impactful to specify her preference or the typical work arrangement for her target roles/industry. For example:
+&quot;Prefers: Remote or Hybrid&quot;
+&quot;Typical for her industry: On-site&quot;
+This would make the segment more specific to her persona and more actionable for product decisions.

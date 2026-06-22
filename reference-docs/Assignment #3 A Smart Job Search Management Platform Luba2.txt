@@ -1,0 +1,55 @@
+
+Assignment #3: Epics &amp; User Stories
+May 12, 2026
+Product name: Joobi
+Student full name: Meital GrundmanStudent full name: Luba FarberovStudent full name: Helen ShusterStudent full name: Yaron Hillman
+** The user stories apply to the MVP persona, David - an active senior job seeker.For convenience, we used the wording “As an active job seeker” throughout the stories.” **
+Theme 1: Control &amp; Visibility in Job Search
+Epic name: Application Tracking &amp; Workflow
+This epic covers the core workflow of organizing and tracking job opportunities in one place. It is part of the MVP because it directly addresses David’s main pain point of loss of control during a fragmented, multi-process job search.
+User Story 1.1
+As an active job seeker, I want to add job opportunities to a centralized workspace, so that I can see all my active applications in one place.
+Acceptance Criteria:Given that I am using Joobi and want to track a new opportunity, when I add a new job opportunity to the workspace, then a new job card should be created in the centralized workspace and display the job title, company name, job link, and selected application stage.
+Alternative scenario:Given that I try to create a job card without entering the required job title or company name,when I click save, then the system should display a validation message and should not create the card.User Story 1.2
+As an active job seeker, I want to manage my job opportunities through a visual Kanban board, so that I can clearly see the status of every opportunity at a glance and move job opportunities across hiring stages
+Acceptance Criteria:Given that I have an active job opportunity in Joobi, when I open the application board,then the system should display Kanban columns for To Apply, Applied, Interviewing, Offer, Rejected, and Accepted, and each existing job card should appear under its current application stage and when I move the job card from one Kanban column to another then the card should appear in the new column, the application status should be updated accordingly, and the updated status should remain saved after refreshing the board.
+User Story 1.3
+As an active job seeker, I want to store private notes inside each job card, so that I can remember interview details, recruiter interactions, and next steps without using a separate notes log.
+Acceptance Criteria:Given that I have a job card on my board, when I add or edit notes inside the job card and click save, then the notes should remain attached only to that specific job card and should be visible when I close and reopen the card.
+Theme 2: Resume Readiness &amp; ATS Optimization
+Epic name: Resume Versions Management
+This epic focuses on helping users manage tailored resume versions efficiently. It is included in the MVP because David’s search involves multiple roles and resume variants, making resume organization essential.
+User Story 2.1
+As an active job seeker, I want to upload multiple resume versions, so that I can tailor my applications to different roles and companies.
+Acceptance Criteria:Given that I am applying to different types of roles, when I upload new resume versions, then the system should store each version and display its file name, upload date, and assigned role or category in the resume versions tab.
+Alternative scenario:Given that I upload a file in an unsupported format, when I try to save it, then the system should reject the upload and display an error message explaining which file formats are supported.
+User Story 2.2
+As an active job seeker, I want to view all my resume versions in one place, so that I can easily find and reuse the most relevant version for a specific job application.
+Acceptance Criteria:Given that I have uploaded multiple resume versions, when I open the resume versions list, then the system should display all resume files sorted from latest to oldest by default and allow me to sort or filter them by upload date, file name, or assigned role/category.
+User Story 2.3
+As an active job seeker, I want to link a specific resume version to a specific job application, so that I know which CV I used for each role.
+Acceptance Criteria:Given that I have at least one job card and more than one resume version in the system,when I assign a resume version to a job application, then that version should be linked to the relevant job card.
+Epic name: ATS Match &amp; Keyword Gap Analysis
+This epic helps users understand how well their resume fits a specific job before applying. It is part of the MVP because ATS readiness directly addresses David’s pain of being filtered out before reaching a human reviewer.
+User Story 3.1
+As an active job seeker, I want to receive an ATS match score for my resume against a job description, so that I can understand how well my CV fits the role before applying.
+Acceptance Criteria:Given that I have uploaded a resume and provided a job description, when I request an ATS match analysis, then the system should display a numerical ATS match score and a short explanation of the score.
+Alternative scenario:Given that I have not uploaded a resume yet, when I request an ATS match analysis,then the system should display a message asking me to upload a resume before continuing.
+User Story 3.2
+As an active job seeker, I want the system to highlight missing keywords from a job description, so that I can improve my resume before submitting it.
+Acceptance Criteria:Given that I have uploaded a resume and provided a job description, when I run a keyword analysis, then the system should compare the job description with my resume and display a list of keywords that appear in the job description but do not appear in my resume.
+User Story 3.3
+As an active job seeker, I want the system to suggest where missing keywords can be incorporated in my CV, so that I can update my resume more efficiently by myself.
+Acceptance Criteria:Given that the system has identified missing keywords, when I review the keyword analysis results, then each missing keyword should include a suggested resume section where it can be added, such as Summary, Experience, Skills, or Projects.
+Theme 3: Interview Readiness
+Epic name: Manual Interview Prep Support
+This epic focuses on helping users prepare for interviews through a manual concierge MVP approach. It is included because the team decided to validate demand for interview preparation support before investing in automation. 
+User Story 4.1
+As an active job seeker, I want to request a one-page interview preparation sheet for a specific job application, so that I can feel more prepared before an upcoming interview.
+Acceptance Criteria:Given that I have a job card with a company name, role title, and job description, when I click “Request Interview Prep Sheet” and submit the request, then the system should confirm that my request was received, attach the request to the relevant job card, display the request status as “Requested,” and, if approved, show that the prep sheet will be delivered within 48 hours.
+User Story 4.2
+As an active job seeker, I want to provide interview-specific details when requesting a preparation sheet, so that the prep sheet will be more relevant to my upcoming interview.
+Acceptance Criteria:Given that I clicked “Request Interview Prep Sheet,” when I fill in the interview stage, interview date, and any specific concerns or questions, then the system should save these details and attach them to the relevant request.
+User Story 4.3
+As an active job seeker, I want to know if my interview prep request was declined, so that I understand the status of my request and can plan accordingly.
+Acceptance Criteria:Given that I submitted a request for an interview prep sheet, when the team declines the request, then the system should update the request status to “Declined” and display a message explaining that the prep sheet will not be delivered.

@@ -1,0 +1,64 @@
+
+Assignment #4: KPIs
+May 19, 2026
+Product name: Joobi
+Student full name: Meital GrundmanStudent full name: Luba FarberovStudent full name: Helen ShusterStudent full name: Yaron Hillman
+Select 3-4 KPIs for your product (for your MVP version)
+Write down the formula for these KPIs
+For each KPI write feature/s that will influence that KPI and how do you predict that it will influence it.
+KPI Name | Formula = Goal % + User segment + Action + Time frame
+KPI Name: Engagement, Retention, Adoption, Conversion rate, Activation, etc..
+Goal: 5% uplift, Increase of X downloads, etc.
+User Segment: Total, Avg, Unique, Number of, % of
+Action: What do you measure? (e.g.: Users who return to the platform)
+Time frame: Daily, Every week, Weekly basis, Monthly basis, Per session...
+(1)
+KPI name
+KPI Formula
+Activation
+% of new signed-up active job seekers who create at least 1 job card and upload at least 1 resume version within 1 day of signup, measured daily.
+Features that influence this KPI
+Expected Influence
+Visual Kanban Board
+Activation rate will increase by 8% because users get an immediate, clean visual interface. New users will immediately begin organizing their job search in one place.
+Resume Version Tracker
+Activation rate will increase by 7% because users will upload tailored resume versions early and experience practical value quickly.
+(2)
+KPI name
+KPI Formula
+Engagement
+Average of 3 weekly sessions per active job seeker who uses at least 1 core MVP feature.
+Features that influence this KPI
+Expected Influence
+Visual Kanban Board
+Engagement will increase by 8% because users will return to review and update their application pipeline.
+ATS Match Score
+Engagement will increase by 6% because users will repeatedly check how well their CV matches specific jobs.
+Keyword Gap Highlighter
+Engagement will increase by 6% because users will come back to improve resumes based on job-specific keyword gaps.
+(3)
+KPI name
+KPI Formula
+Adoption
+% of activated job seekers who return to the platform to update a job card or use a core feature at least twice during their first month.
+Features that influence this KPI
+Expected Influence
+Visual Kanban Board
+Adoption will increase by 3% because users with multiple active applications will rely on the board over time.
+Resume Version Tracker
+Adoption will increase by 2% because users will return to reuse and manage different resume versions across applications.
+Keyword Gap Highlighter
+Adoption will increase by 2% because users will continue refining resumes for new opportunities.
+ATS Match Score
+Adoption will increase by 3% because users will repeatedly evaluate job fit before applying.
+(4)
+KPI name
+KPI Formula
+Happiness 
+% of active users giving a Promoter score (9 or 10) on the NPS survey after 30 days of usage.
+Features that influence this KPI
+Expected Influence
+Personalized Interview Prep Sheets
+Happiness will increase by 10% because David will arrive at the interviews better prepared, which will make him less anxious and give him a better chance of getting the job.  
+ATS Match Score
+Happiness will increase by 6% because this feature helps users feel that their applications are more relevant and better targeted, which increases confidence and perceived value from the product.

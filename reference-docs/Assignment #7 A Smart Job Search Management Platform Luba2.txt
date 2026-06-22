@@ -1,0 +1,113 @@
+
+Assignment #7: Vision, Market Analysis, Competitive Analysis and Roadmap
+June 7, 2026
+Product name: Joobi
+Student name: Meital Grundman
+Student name: Luba Farberov
+Student name: Helen Shuster
+Student name: Yaron Hillman
+Vision, Market analysis, Strategy, and Roadmap:
+Define your product’s vision and Mission Statement
+Vision: 
+To help active job seekers turn fragmented and inefficient job searching into a structured, confident, and effective process.
+Mission statement:To give active job seekers one smart platform to manage applications, optimize resume-job fit, and prepare for hiring steps with practical guidance and clearer decision-making.
+Prepare a basic market analysis:
+Market size (TAM, SAM, SOM)
+TAM: All potential users globally who could benefit from resume optimization and ATS analysis tools.
+Assumptions: 
+Approximately 3.5 billion people are part of the global workforce.
+Roughly 10–15% actively seek jobs or career changes each year.
+Estimated TAM: 350–500 million job seekers annually worldwide.
+If the average revenue per paying user is $50/year:
+TAM Revenue Opportunity:
+350M × $50 = $17.5B
+500M × $50 = $25B
+Estimated TAM: $17–25 billion annually
+SAM: Users the product can realistically serve based on language, geography, and product scope.Assumptions for an MVP:
+English-speaking markets only 
+Mobile-first users
+Digital job seekers who use online recruiting platforms 
+Estimated annual audience: 30–50 million active online job seekers with the 
+same $50 annual revenue assumption.30M × $50 = $1.5B 50M × $50 = $2.5B Estimated SAM: $1.5–2.5 billion annually
+SOM: The realistic market share a new startup can capture in the first few years.
+Assumptions: Year 1–3:
+50,000–200,000 registered users 
+5–10% convert to paid plans 
+Paying users: 2,500–20,000 
+Revenue:
+                  2,500 × $50 = $125K 
+                  20,000 × $50 = $1M 
+Estimated SOM: $125K–$1M annually
+SWOT analysis
+-1758930
+SWOT expansion:
+Strengths:Joobi combines several high-value job-search needs in one product: application tracking, resume version control, and ATS-style fit analysis. This gives users a more structured workflow than using multiple disconnected tools.
+Weaknesses:As a new product, Joobi still lacks trust, proven ATS credibility, and brand recognition. In addition, the MVP scope is narrower than broader competitors that already offer more mature ecosystems.
+Opportunities:There is growing demand for digital job-search support, while many users still rely on fragmented workflows. This creates room for Joobi to position itself as a more guided and organized alternative.
+Threats:The strongest threats are not only competitors like Teal, Huntr, Jobscan, and LinkedIn Jobs, but also free alternatives such as spreadsheets, ChatGPT, saved jobs, and manual job-search workflows. These alternatives reduce switching costs and make differentiation more difficult.
+What are the obstacles for a new player entering the field? 
+Strong existing competitors already offer job tracking, AI resume tools, browser extensions, and ATS support 
+Users can combine free alternatives like spreadsheets, LinkedIn saves, ChatGPT, and existing resume tools, so the switching incentive must be very clear 
+ATS scoring credibility is difficult to prove, so new players must build trust in the quality of their recommendations 
+Distribution is challenging because job seekers are price-sensitive and may stop using the product once they are hired 
+Low Switching Costs- Users can easily try competing tools at little or no cost. If the product does not provide immediate value, users may quickly move to alternative solutions.
+Prepare competitive analysis report
+Who are the main competitors in the field? 
+Joobi operates in the job search and career-tech space, with a focus on job application management, ATS optimization, and resume-job fit analysis.
+The main direct competitors are:
+Teal - offers job tracking, resume tools, and ATS-related resume support. 
+Huntr - offers job tracking, resume management, tailored resumes, autofill, and job search organization tools. 
+Jobscan - focuses strongly on ATS resume matching, keyword optimization, and resume-to-job fit analysis. 
+In addition, LinkedIn Jobs can be considered an indirect / broader competitor, because it supports job discovery, applications, saved jobs, and job-fit insights such as Skills Match, but it is not primarily positioned as a dedicated end-to-end job search management platform like Joobi.
+Joobi’s differentiation lies in turning fragmented job-search work into one guided decision workflow. Rather than offering only job tracking or only ATS scoring, Joobi connects application management, resume version control, and resume-job fit analysis in one structured flow, helping users decide what to do next for each specific role.
+ 
+Map out the main features of your competition in a comparison table below
+Feature
+Joobi
+Teal
+Huntr
+Jobscan
+LinkedIn Jobs
+Job application tracking
++
++
++
+-
+partial
+Resume version management
++
++
++
++
+partial
+ATS match score / fit score
++
++
++
++
+partial
+Keyword gap / resume improvement feedback
++
++
++
++
+-
+Link resume to specific application
++
+partial
++
+-
+-
+Interview prep support
++
+limited
+limited
+-
+-
+Job discovery / job board
+-
+partial
+partial
+limited
++
+Create a roadmap for the next 6 months

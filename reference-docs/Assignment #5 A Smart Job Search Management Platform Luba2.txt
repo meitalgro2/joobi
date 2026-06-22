@@ -1,0 +1,34 @@
+
+Assignment #5: User Journeys
+May 19, 2026
+Product name: Joobi
+Student full name: Meital GrundmanStudent full name: Luba FarberovStudent full name: Helen ShusterStudent full name: Yaron Hillman
+User Journey — Onboarding new user – Meital
+Persona: David, active senior job seeker Goal: Start managing his job search in one organized place.Entry point: David discovers Joobi and opens the app for the first time. 
+User Journey- ATS Match Score user journey – Helen
+As an active job seeker, I want to upload a resume PDF file and provide a job description so that I can receive an ATS match score and understand how well my resume fits the role before applying.
+Why this journey mattersThis journey solves a core pain point. It helps job seekers identify gaps between their resume and the job requirements before applying. Many candidates are rejected by ATS systems before a recruiter even reviews their application, often because of missing keywords or poor alignment with the job description. By providing an ATS match score and clear feedback, the feature gives users actionable insights to improve their resumes, increase their chances of passing ATS screening, and apply with greater confidence.
+139446011430
+         1.1    -1797042336791288415245745277050522732932140533191.1
+1.1
+465232822241.3
+1.3
+1747838-43571.2
+1.2
+4356100241300
+2785110314960030067329117931.4
+1.4
+-1797043144520324961329149681.6
+1.6
+12954003149600174783829105231.5
+1.5
+481552329238581.6
+1.6
+43243503147060
+User Journey- Resume Version Tracker- Luba
+As an active job seeker, I want to upload, view, and link a resume version to a specific job application, so that I can use the most relevant CV for each role.
+Why this journey matters
+This journey supports one of Joobi’s MVP features and solves a core pain point for David: managing multiple CV versions for different roles without losing track of which version was used for each application.
+User Journey- Interview preparation sheet- Yaron
+As an active job seeker, I want to generate a one-page interview preparation sheet for a specific job application, so that I can feel more prepared before an upcoming interview.
+Acceptance Criteria:Given that I have a job card with a company name, role title, and job description,when I click “Request Interview Prep Sheet” and submit the request,then the system should confirm that my request was received, attach the request to the relevant job card, display the request status as “Requested,” and if approved show that the prep sheet will be delivered within 48 hours.

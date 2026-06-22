@@ -1,0 +1,235 @@
+
+Assignment #6: PRDs
+May 31, 2026
+Product name: Joobi
+Student full name: Meital GrundmanStudent full name: Luba FarberovStudent full name: Helen ShusterStudent full name: Yaron Hillman
+Feature focus: ATS Match Score + Resume Version Tracker
+Chapter 2 - Intro
+2.1 Overview
+Joobi is an AI-powered job search management platform designed to help active job seekers manage their applications, improve resume-job fit, and make more informed job search decisions. The product combines application tracking, resume version management, ATS analysis, and targeted interview support into one organized workflow.
+2.2 Goals
+2.2.1 User Goals
+Help users understand how well their resume fits a job before applying. 
+Help users manage multiple resume versions for different roles. 
+Help users link the most relevant CV to the correct job application. 
+Reduce confusion, manual tracking, and guesswork in the job search process. 
+2.2.2 Business Goals
+Validate demand for core MVP features among active job seekers. 
+Increase repeated use of Joobi during the job search process. 
+Build trust in Joobi as a practical career copilot. 
+Create a strong foundation for future premium features and broader product growth. 
+Increase user engagement by helping job seekers quickly understand how well their resume matches a job description.
+2.3 Business Goal Signals
+Validate demand → % of users who complete at least one ATS analysis or link at least one resume version to a job application. 
+Increase repeated use → average number of tracked applications or ATS analyses per active user in the first two weeks. 
+Build trust → % of users who return to use the product again after receiving an ATS result. 
+Create a foundation for monetization → % of users who use high-value features repeatedly, such as ATS analysis across multiple job applications. 
+Increase user engagement → average number of job search actions completed per active user session. 
+2.4 Terminology
+Resume Version: A specific CV version tailored to a particular role or category. 
+Job Card: A tracked job application in the Joobi workspace. 
+ATS Match Score: A score indicating how well a resume matches a job description. 
+Role/Category: The job type or domain associated with a specific resume version. 
+Areas for Improvement: ATS-based suggestions for improving resume fit. 
+2.5 Out of Scope
+Native Android application 
+Native iOS application 
+Desktop-optimized experience 
+Automated interview preparation sheet generation 
+Email auto-sync with Gmail/Outlook 
+In-app recruiter messaging 
+Cover letter generation
+Multi-language resume analysis is not supported in the MVP (English only).
+Chapter 5 - Functional Requirements (HL Requirements)
+5.1 Resume Upload
+The product shall allow users to upload a resume file in order to use core job search features, including ATS analysis and resume version tracking. 
+5.2 Resume Versions List and Management
+The product shall provide a dedicated area where users can view and manage all uploaded resume versions in one place, including file name, upload date, and role/category.
+5.3 Resume-to-Job Linking
+The product shall allow users to link a selected resume version to a specific job application, so that users can track which CV was used for each role. 
+5.4 ATS Match Score Analysis
+The product shall allow users to upload a resume and provide a job description in order to receive an ATS match score between 0-100 and a short explanation of the result. 
+5.5 Keyword Gap Feedback
+The product shall display strengths and areas for improvement based on the ATS comparison between the uploaded resume and the job description. 
+Chapter 6 - Non-Functional Requirements
+6.1 Usability
+The product shall support a simple and intuitive user experience for active job seekers managing multiple applications and resume versions. Core actions shall be easy to understand and require minimal learning effort.
+The resume upload process shall require no more than three user actions to complete. 
+Error messages shall provide clear guidance on how users can resolve issues. 
+6.2 PerformanceThe system shall display the Resume Versions page and ATS upload flow in less than 3 seconds under normal usage conditions.
+The ATS Match Score shall be generated within 10 seconds for 95% of requests. 
+The platform shall support processing resume files up to 10 MB in size. 
+6.3 File Support
+The system shall support common resume formats, including PDF and DOC/DOCX. Unsupported file formats shall trigger a clear error message. 
+6.4 Error Handling
+The system shall provide clear and actionable error messages for non-happy flow cases, including missing required fields, unsupported file type, failed upload, and missing resume before ATS analysis. Each error message shall explain the issue, indicate the relevant field or action, and guide the user on how to proceed.
+The system shall display clear and user-friendly error messages when a resume upload fails. 
+The system shall notify users when an unsupported file format is uploaded. 
+The system shall provide guidance on how to resolve validation errors. 
+If ATS analysis cannot be completed, the user shall receive a notification and be prompted to retry. 
+The system shall prevent data loss in the event of a temporary connection failure. 
+All application errors shall be logged for monitoring and troubleshooting purposes.
+Sensitive technical details shall not be exposed to end users in error messages.
+6.5 Data Integrity
+Each uploaded resume version, ATS result, and job application link shall be associated with the correct authenticated user and the correct job application.
+The system shall validate all required fields before processing an ATS analysis request. 
+The system shall preserve user data during system updates, maintenance activities, or unexpected failures.
+The system shall ensure that ATS scores and recommendations are generated from the most recent version of the uploaded resume and job description.
+6.6 Visibility of Status
+The system shall provide clear visual feedback after user actions such as upload, analysis request, successful linking, or validation failure.
+6.7 Privacy and Access Control
+Resume files, ATS results, and linked job application data shall only be visible to the relevant authenticated user and authorized internal roles if applicable.
+User data shall be processed in accordance with applicable privacy regulations. 
+Users shall be able to delete their uploaded resumes and associated analysis results upon request. 
+Personally identifiable information (PII) shall be handled according to company privacy policies.
+6.8 Supported Platforms- CompatibilityThe MVP shall support responsive mobile web only. Native Android and iOS applications are out of scope for the first version. Desktop optimization is also out of scope for this MVP.
+The MVP should be optimized for mobile devices only. 
+The application shall support the latest two versions of major mobile browsers, including Chrome on Android and Safari on iOS. 
+Desktop and tablet experiences are out of scope for the MVP release. 
+The user interface shall be responsive across common mobile screen sizes.
+6.9 Accessibility
+The application shall support clear readable content and accessible interaction patterns for core user actions.
+Chapter 7 - Detailed Requirements and User Flows
+7.1 Story 1 - ATS Match Score
+7.1.1 User StoryAs an active job seeker, I want to upload my resume and provide a job description, so that I can receive an ATS match score and understand how well my resume fits the role before applying. 
+7.1.2 Purpose
+This flow helps users evaluate how well their resume matches a job before applying. It addresses a key user pain point: being rejected by ATS systems before a recruiter reviews the application. 
+7.1.3 Pages / Screens
+ATS Upload Screen 
+Job Description Input Screen 
+ATS Result Screen 
+7.1.4 Main User Flow
+User opens the ATS Match Score feature. 
+User uploads a resume file. 
+User provides or pastes the relevant job description. 
+User clicks Analyze Match. 
+The system computes the ATS match score. 
+The system displays the ATS score, explanation, strengths, and areas for improvement. 
+User clicks on "Analyze Another Job"/"Back To Home" button.
+7.1.5 Non-Happy Flow
+No resume uploaded 
+Unsupported file type 
+Missing job description 
+ATS analysis cannot be completed 
+7.1.6 Wireframes - ATS Match Score
+Screen 1: ATS Upload Screen 
+Screen 2: Job Description Input Screen 
+Screen 3: ATS Result Screen
+         -1797042336791288415245745277050522732932140533191.1
+1.1
+465232822241.3
+1.3
+1747838-43571.2
+1.2
+4356100241300231458-47611.1
+1.1
+2785110314960030067329117931.4
+1.4
+-1797043144520324961329149681.6
+1.6
+12954003149600174783829105231.5
+1.5
+481552329238581.6
+1.6
+43243503147060
+7.1.7 Detailed Requirements
+7.1.7.1 ATS Upload Screen
+The screen shall include an upload area for resume files. 
+The screen shall display supported file formats. 
+The user shall be able to continue only after a valid resume file is uploaded. 
+If no resume is uploaded, the system shall display a clear message asking the user to upload a resume before continuing. 
+7.1.7.2 Job Description Input Screen
+The screen shall allow users to paste or enter a job description. 
+The job description field shall be editable by the user. 
+The Analyze Match button shall be enabled only when both a valid resume and a job description are available. 
+If the job description field is empty, the system shall disable the Analyze Match button and display a validation message.
+7.1.7.3 ATS Result Screen
+The screen shall display a numerical ATS match score. 
+The screen shall display a short explanation of the score. 
+The screen shall display strengths identified in the resume. 
+The screen shall display areas for improvement. 
+The screen may display keyword-based suggestions to improve fit. 
+If the ATS analysis fails, the system shall display an error message and allow the user to retry the analysis.
+7.1.7.4 Navigation
+Clicking Continue after successful upload shall move the user to the job description screen. 
+Clicking Analyze Match shall move the user to the ATS result screen. 
+Clicking Back shall return to the previous step. 
+7.1.7.5 User Interaction
+The upload area shall accept one resume file per analysis request. 
+The job description field shall be editable by the user. 
+The Analyze Match button shall remain disabled until both a valid resume file and a job description are provided. 
+Required fields shall be visually indicated to the user. 
+7.1.7.6 Logic
+ATS analysis shall start only after both a valid resume file and a job description are available. 
+The ATS score shall be calculated for the specific uploaded resume and entered job description only. 
+If the job description is changed after analysis, the user shall be required to run the analysis again. 
+If the ATS result is unavailable, the system shall not display partial results. 
+7.1.7.7 Load / Close Events
+On load, the ATS Upload Screen shall display the supported file formats. 
+On load, the Job Description Input Screen shall display an empty editable text field. 
+On close, if the user entered data that was not submitted, the system shall warn the user before exiting the flow. 
+7.2 Story 2 - Resume Version Tracker
+7.2.1 User StoryAs an active job seeker, I want to upload, view, and link a resume version to a specific job application, so that I can use the most relevant CV for each role. 
+7.2.2 Purpose
+This flow helps users manage multiple resume versions and avoid confusion about which CV was used for which application. It supports one of Joobi’s core MVP features. 
+7.2.3 Pages / Screens
+Resume Versions List 
+Upload New Resume 
+Link Resume to Job Application 
+7.2.4 Main User Flow
+User opens the Resume Versions page. 
+User reviews existing resume versions. 
+If a suitable version exists, the user selects a job application and links the chosen resume. 
+If no suitable version exists, the user uploads a new version. 
+The user links the selected resume version to the chosen job. 
+The system confirms that the selected version was linked successfully. 
+7.2.5 Non-Happy Flow
+Unsupported file type 
+Missing resume name 
+Missing role/category 
+Upload failure 
+No suitable resume version available yet 
+7.2.6 Wireframes - Resume Version Tracker
+Screen 1: Resume Versions List 
+Screen 2: Upload New Resume 
+Screen 3: Link Resume to Job Application
+7.2.7 Detailed Requirements
+7.2.7.1 Resume Versions List Screen
+The screen shall display all uploaded resume versions in one place. 
+Each resume entry shall display file name, upload date, and role/category. 
+The screen shall include an Upload New Resume CTA. 
+The screen shall include an action for linking a resume to a job application. 
+If no resume versions exist yet, the system shall display an empty state with an Upload New Resume CTA.
+7.2.7.2 Upload New Resume Screen
+The screen shall allow users to upload a new resume file. 
+The upload form shall include a required Resume Name field. 
+The upload form shall include a required Role/Category field. 
+The upload form may include an optional notes field. 
+If the user uploads an unsupported file type, the system shall reject the upload and display an error message. 
+If required fields are missing, the system shall display a validation message and allow the user to retry. 
+7.2.7.3 Link Resume to Job Application Screen
+The screen shall display a job summary, including title, company, and current stage. 
+The user shall be able to choose a resume version from the available list. 
+The selected resume details shall be displayed before confirmation. 
+After clicking Link Resume, the system shall confirm successful linking. 
+The linked resume version shall be associated with the selected job application. 
+If linking fails, the system shall display an error message and allow the user to retry.
+7.2.7.4 Navigation
+Clicking Upload New Resume shall navigate to the upload form. 
+Clicking Link to Job shall navigate to the link screen. 
+Clicking Cancel shall return the user to the previous screen. 
+Clicking Back to Job Board shall return the user to the job board after successful linking. 
+7.2.7.5 User Interaction
+The Upload New Resume form shall support one file upload per action. 
+Resume Name and Role/Category shall be required fields. 
+Notes shall be optional. 
+The Link Resume action shall remain disabled until a resume version is selected. 
+7.2.7.6 Logic
+Resume versions shall be displayed from newest to oldest by default. 
+Each resume version shall be linked to a job application only after explicit user confirmation. 
+If no resume versions exist, the system shall display an empty state instead of a blank page. 
+If linking fails, no partial link shall be saved. 
+7.2.7.7 Load / Close Events
+On load, the Resume Versions List Screen shall display the current list of uploaded resume versions. 
+On load, the Upload New Resume Screen shall display empty required fields. 
+On close, if the user entered data but did not save it, the system shall warn the user before exiting the screen. 

@@ -1,0 +1,118 @@
+
+Assignment #2: Backlog and Prioritization
+May 3, 2026
+Product name: Joobi
+Student full name: Meital Grundman Student full name: Luba Farberov Student full name: Helen Shuster Student full name: Yaron Hillman
+We have prioritized these requirements based on the MoSCoW framework.
+The MVP will include Must Have features only, plus a manual concierge version of the Interview Prep Sheet to validate user demand before automation.
+Should Have and Could Have features are planned for later iterations or manual validation before full development. 
+#
+Requirement Name
+Description
+Priority (MoSCoW)
+Effort (T-shirt)
+1
+Visual Kanban Board
+The system shall provide a centralized workspace with a visual Kanban board to track job opportunities at a glance. Each job card will include core job details and a free-text notes field for private notes and interaction history.
+Must Have
+M
+2
+Resume Version Tracker
+The system shall allow users to upload, manage, and track multiple resume versions tailored to different roles.
+Must Have
+S
+3
+ATS Match Score
+The system shall provide AI-based matching scores and suggestions to evaluate resume compatibility with job descriptions.
+Must Have
+M
+4
+Keyword Gap Highlighter
+The system shall identify missing critical keywords from job descriptions and suggest exactly where to incorporate them in the CV.
+Must Have
+S
+5
+Interview Prep Sheet - Manual Concierge MVP 
+The system shall allow users to request a one-page interview preparation brief from a specific job card. The brief will be delivered manually within 24 hours by the team using ChatGPT and a fixed template. The automated generator will not be built in the MVP. 
+Must Have
+S
+6
+Interview Prep Sheet
+The system shall validate demand manually by offering users a one-page interview preparation brief delivered within 24 hours, created by the team using ChatGPT and a fixed template. The automated generator will not be built in the MVP.
+Should Have
+S
+7
+AI CV Rewriter / One-Click CV Builder
+The system shall automatically rewrite CV bullet points to naturally incorporate missing keywords identified by the highlighter.
+Could Have
+M
+8
+AI Intro Generator
+The system shall provide AI-personalized message templates for recruiter outreach and referral requests.
+Could Have
+S
+9
+Chrome Extension (Save Job)
+The system shall provide a browser extension to save job postings from LinkedIn directly to the board with one click.
+Could Have
+M
+10
+Cover Letter Generator
+The system shall generate tailored cover letters based on job descriptions and the company's specific brand tone.
+Could Have
+M
+11
+Career Coach Access
+The system shall allow mentors or career coaches to view a user's board in read-only mode to provide feedback and advice.
+Could Have
+L
+12
+B2B Admin Dashboard
+The system shall provide a separate administrative dashboard for institutions and companies to monitor student search outcomes.
+Could Have
+L
+13
+Network CRM
+The system shall identify and flag 1st or 2nd-degree LinkedIn and social media connections working at target companies for referral opportunities. This should first be validated manually before product development.
+Could Have
+L
+14
+Analytics Dashboard
+The system shall provide a visual dashboard summarizing overall job search progress and success metrics. This will be considered only after observing real user behavior.
+Could Have
+L
+15
+Salary Range Lookup
+The system shall display or link to market-standard salary ranges for specific roles and seniority levels to assist in negotiations. For early versions, this should be handled through external links rather than built-in salary data.
+Could Have
+S
+16
+Follow-up Reminder
+The system shall provide automated reminders for follow-up actions and deadlines.
+Could Have
+S
+17
+Email Auto-Sync
+The system shall integrate with Gmail/Outlook to automatically update Kanban card stages based on recruiter emails.
+Won't Have
+L
+18
+AI Voice Interview Simulator
+The system shall simulate real-time verbal mock interviews using voice AI to provide feedback on tone and content.
+Won't Have
+XXL
+19
+Text-Based Mock Interviewer
+The system shall provide a text-based chatbot for users to practice and score their written interview answers.
+Won't Have
+XL
+20
+Native Mobile App
+The system shall provide dedicated iOS and Android applications for mobile tracking. The MVP will focus on a responsive web experience.
+Won't Have
+XL
+21
+In-App Recruiter Messaging
+The system shall provide a built-in tool for users to message recruiters directly through the platform.
+Won't Have
+XL

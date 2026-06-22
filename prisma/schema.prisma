@@ -1,0 +1,99 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// SQLite has no native enum support; Stage is one of TO_APPLY, APPLIED,
+// INTERVIEWING, OFFER, REJECTED, ACCEPTED (see src/lib/constants.ts)
+// PrepStatus is one of REQUESTED, DELIVERED, DECLINED
+
+model User {
+  id                    String    @id @default(cuid())
+  name                  String
+  email                 String    @unique
+  passwordHash          String?
+  authProvider          String    @default("credentials")
+  emailVerified         DateTime?
+  desiredRole           String?
+  seniority             String?
+  onboardingCompletedAt DateTime?
+  createdAt             DateTime  @default(now())
+
+  jobCards           JobCard[]
+  resumeVersions     ResumeVersion[]
+  atsAnalyses        AtsAnalysis[]
+  prepRequests       InterviewPrepRequest[]
+  verificationTokens VerificationToken[]
+}
+
+model VerificationToken {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  token     String   @unique
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+}
+
+model JobCard {
+  id        String   @id @default(cuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  title     String
+  company   String
+  link      String?
+  stage     String   @default("TO_APPLY")
+  notes     String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  resumeVersionId String?
+  resumeVersion   ResumeVersion? @relation(fields: [resumeVersionId], references: [id], onDelete: SetNull)
+
+  prepRequests InterviewPrepRequest[]
+}
+
+model ResumeVersion {
+  id           String   @id @default(cuid())
+  userId       String
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  fileName     String
+  filePath     String
+  roleCategory String
+  notes        String?
+  uploadedAt   DateTime @default(now())
+
+  jobCards JobCard[]
+}
+
+model AtsAnalysis {
+  id             String   @id @default(cuid())
+  userId         String
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  resumeFileName String
+  jobDescription String
+  score          Int
+  explanation    String
+  strengths      String
+  gaps           String
+  createdAt      DateTime @default(now())
+}
+
+model InterviewPrepRequest {
+  id             String     @id @default(cuid())
+  userId         String
+  user           User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  jobCardId      String
+  jobCard        JobCard    @relation(fields: [jobCardId], references: [id], onDelete: Cascade)
+  interviewStage String?
+  interviewDate  DateTime?
+  concerns       String?
+  status         String     @default("REQUESTED")
+  deliveryNote   String?
+  createdAt      DateTime   @default(now())
+  updatedAt      DateTime   @updatedAt
+}
