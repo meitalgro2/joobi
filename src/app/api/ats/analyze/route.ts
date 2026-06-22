@@ -1,9 +1,8 @@
 import { NextResponse } from "next/server";
-import { readFile } from "fs/promises";
-import path from "path";
 import { prisma } from "@/lib/prisma";
 import { requireUserId, isErrorResponse } from "@/lib/api-helpers";
 import { extractResumeText } from "@/lib/file-text";
+import { supabaseAdmin } from "@/lib/supabase";
 import { analyzeAts } from "@/lib/ats";
 import {
   MAX_RESUME_SIZE_BYTES,
@@ -65,9 +64,10 @@ export async function POST(req: Request) {
         { status: 404 }
       );
     }
-    try {
-      buffer = await readFile(path.join(process.cwd(), resume.filePath));
-    } catch {
+    const { data: blob, error: downloadError } = await supabaseAdmin.storage
+      .from("jobi")
+      .download(resume.filePath);
+    if (downloadError || !blob) {
       return NextResponse.json(
         {
           error:
@@ -76,6 +76,7 @@ export async function POST(req: Request) {
         { status: 404 }
       );
     }
+    buffer = Buffer.from(await blob.arrayBuffer());
     fileName = resume.fileName;
     extractionName = resume.filePath;
   } else {

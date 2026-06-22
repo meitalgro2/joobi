@@ -1,25 +1,24 @@
-import { mkdir, writeFile, unlink } from "fs/promises";
-import path from "path";
+import { supabaseAdmin } from "@/lib/supabase";
 
-const STORAGE_ROOT = path.join(process.cwd(), "storage", "resumes");
+const BUCKET = "jobi";
 
 export async function saveResumeFile(
   userId: string,
   originalName: string,
   buffer: Buffer
 ): Promise<string> {
-  const userDir = path.join(STORAGE_ROOT, userId);
-  await mkdir(userDir, { recursive: true });
-
   const safeName = originalName.replace(/[^a-zA-Z0-9.\-_]/g, "_");
-  const fileName = `${Date.now()}-${safeName}`;
-  const fullPath = path.join(userDir, fileName);
+  const path = `resumes/${userId}/${Date.now()}-${safeName}`;
 
-  await writeFile(fullPath, buffer);
-  return path.join("storage", "resumes", userId, fileName);
+  const { error } = await supabaseAdmin.storage.from(BUCKET).upload(path, buffer, {
+    contentType: "application/octet-stream",
+    upsert: false,
+  });
+  if (error) throw error;
+
+  return path;
 }
 
-export async function deleteResumeFile(relativePath: string): Promise<void> {
-  const fullPath = path.join(process.cwd(), relativePath);
-  await unlink(fullPath).catch(() => undefined);
+export async function deleteResumeFile(path: string): Promise<void> {
+  await supabaseAdmin.storage.from(BUCKET).remove([path]);
 }
